@@ -19,7 +19,45 @@
 
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="0">
-      <!--Titulo de la pagina web-->
+    <!--Menu responsivo de la pagina-->
+    <nav id="navbar" class="navbar navbar-inverse bg-inverse navbar-toggleable-sm sticky-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Bootstrap" />
+            Bootstrap
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav nav-pills mr-auto ml-auto text-center">
+                <a class="nav-item nav-link " href="#image">Imagen</a>
+                <a class="nav-item nav-link" href="#carousel">Carrusel</a>
+                <a class="nav-item nav-link " href="#cards">Tarjetas</a>
+                <a class="nav-item nav-link " href="#jumbotron">Jumbotron</a>
+                <a class="nav-item nav-link " href="#form">Formulario</a>
+                <a class="nav-item nav-link " href="#fonts">Fonts</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Otros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Otro 1</a>
+                        <a class="dropdown-item" href="#">Otro 2</a>
+                        <a class="dropdown-item" href="#">Otro 3</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-row justify-content-center">
+                <a class="btn btn-primary mr-2 " href="#">F</a>
+                <a class="btn btn-danger " href="#">Y</a>
+            </div>
+        </div>
+    </nav>  
+    
+    
+    
+    <!--Titulo de la pagina web-->
       <section id="image" class="container-fluid slider d-flex justify-content-center align-items-center">
           <h1 class="display-4">Bootstrap 4!</h1>
       </section>
@@ -36,24 +74,24 @@
                   <img class="d-block w-100" src="img/bg-1.jpg" alt="First slide">
                   <div class="carousel-caption d-none d-md-block">
                       <h3>Bootstrap 4!</h3>
-                      <p>This is a longer card with supporting text below as a natural lead-in to additional content.
-                      This content is a little bit longer.</p>
+                      <p>Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional.
+                        Este contenido es un poco más largo.</p>
                   </div>
               </div>
               <div class="carousel-item" style="height: 100vh">
                   <img class="d-block w-100" src="img/bg-2.png" alt="Second slide">
                   <div class="carousel-caption d-none d-md-block">
                       <h3>Bootstrap 4!</h3>
-                      <p>This is a longer card with supporting text below as a natural lead-in to additional content.
-                      This content is a little bit longer.</p>
+                      <p>Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional.
+                        Este contenido es un poco más largo</p>
                   </div>
               </div>
               <div class="carousel-item" style="height: 100vh">
                   <img class="d-block w-100" src="img/bg-3.jpg" alt="Third slide">
                   <div class="carousel-caption d-none d-md-block">
                       <h3>Bootstrap 4!</h3>
-                      <p>This is a longer card with supporting text below as a natural lead-in to additional content.
-                      This content is a little bit longer.</p>
+                      <p>Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional.
+                        Este contenido es un poco más largo</p>
                   </div>
               </div>
           </div>
@@ -67,49 +105,16 @@
           </a>
       </div>
 
-      <!--Menu responsivo de la pagina-->
-      <nav id="navbar" class="navbar navbar-inverse bg-inverse navbar-toggleable-sm sticky-top">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-              <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Bootstrap" />
-              Bootstrap
-          </a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <div class="navbar-nav nav-pills mr-auto ml-auto text-center">
-                  <a class="nav-item nav-link " href="#image">Image</a>
-                  <a class="nav-item nav-link" href="#carousel">Carousel</a>
-                  <a class="nav-item nav-link " href="#cards">Cards</a>
-                  <a class="nav-item nav-link " href="#jumbotron">Jumbotron</a>
-                  <div class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Otros
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#form">Forms</a>
-                          <a class="dropdown-item" href="#fonts">Fonts</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="d-flex flex-row justify-content-center">
-                  <a class="btn btn-primary mr-2 " href="#">F</a>
-                  <a class="btn btn-danger " href="#">Y</a>
-              </div>
-          </div>
-      </nav>
-
       <!--Tarjetas o Cards-->
       <section id="cards" class="container mt-5 pt-5">
           <div class="card-deck">
               <div class="card">
                   <img class="card-img-top img-fluid" src="img/bg-1.jpg" alt="Card image cap">
                   <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. 
-                      This content is a little bit longer.</p>
+                      <h4 class="card-title">Titulo de tarjeta</h4>
+                      <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural
+                         a contenido adicional.
+                        Este contenido es un poco más largo.</p>
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" >
                           Link
                       </button>
@@ -118,16 +123,17 @@
                           <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                   <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                      <h5 class="modal-title" id="exampleModalLabel">Titulo modal</h5>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                           <span aria-hidden="true">&times;</span>
                                       </button>
                                   </div>
                                   <div class="modal-body">
-                                      Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.
+                                    Alternar una demostración modal de trabajo haciendo clic en el botón de abajo. 
+                                    Se deslizará hacia abajo y aparecerá gradualmente desde la parte superior de la página.
                                   </div>
                                   <div class="modal-footer">
-                                      <button type="button" class="btn btn-primary" data-dismiss="modal" >Close</button>
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal" >Cerrar</button>
                                   </div>
                               </div>
                           </div>
@@ -137,9 +143,10 @@
               <div class="card">
                   <img class="card-img-top img-fluid" src="img/bg-2.png" alt="Card image cap">
                   <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. 
-                      This content is a little bit longer.</p>
+                      <h4 class="card-title">Titulo de tarjeta</h4>
+                      <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural
+                         a contenido adicional.
+                        Este contenido es un poco más largo.</p>
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
                           Link
                       </button>
@@ -148,20 +155,22 @@
                           <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                   <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                      <h5 class="modal-title" id="exampleModalLabel">Titulo modal</h5>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                           <span aria-hidden="true">&times;</span>
                                       </button>
                                   </div>
                                   <div class="modal-body">
-                                      <h5>Popover in a modal</h5>
-                                      <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+                                      <h5>Popover en un modal</h5>
+                                      <p>Este <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" 
+                                        data-content="Popover body content is set in this attribute.">boton</a> desencadena un popover al hacer clic.</p>
                                       <hr>
-                                      <h5>Tooltips in a modal</h5>
-                                      <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+                                      <h5>Tooltips in an modal</h5>
+                                      <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" 
+                                        class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
                                   </div>
                                   <div class="modal-footer">
-                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
                                   </div>
                               </div>
                           </div>
@@ -171,9 +180,11 @@
               <div class="card">
                   <img class="card-img-top img-fluid" src="img/bg-3.jpg" alt="Card image cap">
                   <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. 
-                      This content is a little bit longer.</p>
+                      <h4 class="card-title">Titulo de tarjeta</h4>
+                      <p class="card-text">
+                        Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural
+                         a contenido adicional.
+                        Este contenido es un poco más largo.</p>
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
                           Link
                       </button>
@@ -182,7 +193,7 @@
                           <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                   <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                      <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                           <span aria-hidden="true">&times;</span>
                                       </button>
@@ -190,18 +201,18 @@
                                   <div class="modal-body">
                                       <form>
                                           <div class="form-group">
-                                              <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                              <label for="recipient-name" class="col-form-label">Recipiente:</label>
                                               <input type="text" class="form-control" id="recipient-name">
                                           </div>
                                           <div class="form-group">
-                                              <label for="message-text" class="col-form-label">Message:</label>
+                                              <label for="message-text" class="col-form-label">Mensaje:</label>
                                               <textarea class="form-control" id="message-text"></textarea>
                                           </div>
                                       </form>
                                   </div>
                                   <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Send message</button>
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-primary">Enviar mensaje</button>
                                   </div>
                               </div>
                           </div>
@@ -214,12 +225,13 @@
       <!--Jumbotron-->
       <div id="jumbotron" class="jumbotron mt-5 bg-inverse text-white rounded-0">
           <div class="container">
-              <h1 class="display-3">Hello, world!</h1>
-              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <h1 class="display-3">¡Hola, mundo!</h1>
+              <p class="lead">Esta es una unidad de héroe simple, un componente de estilo jumbotron simple 
+                  para llamar la atención sobre el contenido o la información destacados.</p>
               <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <p>Utiliza clases de utilidad para la tipografía y el espaciado para espaciar el contenido dentro del contenedor más grande.</p>
               <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Learn more</a>
+                  <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Leer más</a>
               </p>
           </div>
       </div>
@@ -227,19 +239,19 @@
       <!--Formulario-->
       <section id="form" class="container">
           <h3 class="text-uppercase text-center">Formulario de contacto</h3>
-          <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+          <p class="lead text-center">
+            Aquí hay un ejemplo rápido para demostrar los estilos de formulario de Bootstrap. Siga leyendo para obtener 
+            documentación sobre las clases obligatorias, el diseño de formularios y más.
           </p>
 
           <form action="" class="form-inline justify-content-center flex-column flex-md-row">
               <div class="form-group my-2">
                   <label for="" class="mx-2 hidden-sm-down">Nombre:</label>
-                  <input type="text" placeholder="Escribe tu nombre aqui" class="form-control" />
+                  <input type="text" placeholder="Ejemplo" class="form-control" />
               </div>
               <div class="form-group my-2">
                   <label for="" class="mx-2 hidden-sm-down">Email:</label>
-                  <input type="email" placeholder="Escribe tu email" class="form-control" />
+                  <input type="email" placeholder="ejemplo@email.com" class="form-control" />
               </div>
               <div class="form-group mx-2 my-2">
                   <button class="btn btn-danger" type="submit">Enviar</button>
